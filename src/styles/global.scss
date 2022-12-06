@@ -1,0 +1,24 @@
+$bodyBackground: #f3f3f3;
+body {
+  background: $bodyBackground;
+  font-family: open sans, sans-serif;
+}
+
+header {
+  background: white;
+  .header-top {
+    a {
+      color: #969696;
+      transition: color 200ms;
+      font-size: 0.75rem;
+      &:hover {
+        color: #222;
+      }
+    }
+    .social-media {
+      .nav-link {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

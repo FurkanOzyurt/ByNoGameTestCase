@@ -1,0 +1,31 @@
+{
+  "name": "bynogametestcase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FurkanOzyurt/ByNoGameTestCase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FurkanOzyurt/ByNoGameTestCase/issues"
+  },
+  "homepage": "https://github.com/FurkanOzyurt/ByNoGameTestCase#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}
