@@ -1,39 +1,65 @@
 <header>
+  <div class="header-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <ul class="align-items-center d-flex nav pl-2 social-media">
+            {{#socials}}
+            <li class="nav-item">
+              <a class="nav-link pe-0" href="{{href}}" target="_blank"
+                ><i class="{{icon}}"></i>
+              </a>
+            </li>
+            {{/socials}}
+          </ul>
+        </div>
+        <div>
+          <ul
+            class="align-items-center d-flex flex-nowrap justify-content-end nav"
+          >
+            {{#topHeaderLink}}
+            <li class="d-lg-block d-none nav-item">
+              <a class="nav-link" href="/tr/shop">{{name}}</a>
+            </li>
+            {{/topHeaderLink}}
+            <li class="d-lg-block d-none nav-item">
+              <a class="font-weight-bold nav-link text-danger" href="/tr/yardim"
+                >YARDIM MERKEZİ</a
+              >
+            </li>
+            <li class="d-lg-block d-none nav-item">
+              <a
+                class="font-weight-bolder nav-link text-success"
+                href="/tr/ilan-ekle"
+                >İlan Ekle, Satıcı Ol
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center header-top">
-      <div>
-        <ul class="align-items-center d-flex nav pl-2 social-media">
-          {{#socials}}
-          <li class="nav-item">
-            <a class="nav-link pe-0" href="{{href}}" target="_blank"
-              ><i class="{{icon}}"></i>
-            </a>
-          </li>
-          {{/socials}}
-        </ul>
+    <div class="d-flex justify-content-between align-items-center py-3">
+      <div class="logo">
+        <a href="/tr"><img src="{{logo}}" alt="logo" /></a>
+        <button class="btn ms-3 shadow-sm dark-mode">
+          <i class="fas fa-cloud-moon"></i>
+        </button>
+        <button class="btn ms-2">
+          <span class="align-items-center d-flex justify-content-center">
+            <i class="fas fa-globe"></i>
+          </span>
+        </button>
       </div>
       <div>
-        <ul
-          class="align-items-center d-flex flex-nowrap justify-content-end nav"
-        >
-          {{#topHeaderLink}}
-          <li class="d-lg-block d-none nav-item">
-            <a class="nav-link" href="/tr/shop">{{name}}</a>
-          </li>
-          {{/topHeaderLink}}
-          <li class="d-lg-block d-none nav-item">
-            <a class="font-weight-bold nav-link text-bng-red" href="/tr/yardim"
-              >YARDIM MERKEZİ</a
-            >
-          </li>
-          <li class="d-lg-block d-none nav-item">
-            <a
-              class="font-weight-bolder nav-link text-bng-green"
-              href="/tr/ilan-ekle"
-              >İlan Ekle, Satıcı Ol
-            </a>
-          </li>
-        </ul>
+        <div class="search-container">
+          <div class="search-input">
+            <i class="search-icon fas fa-search"></i>
+            <input type="text" class="form-control-lg" placeholder="Ara..." />
+          </div>
+          <button class="btn">Ara</button>
+        </div>
       </div>
     </div>
   </div>

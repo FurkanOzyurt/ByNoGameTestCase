@@ -1,6 +1,6 @@
 require("/src/styles/reset.scss");
 require("/src/styles/global.scss");
-
+const Logo = require("./images/bynogame-logo.png");
 const headerData = {
   socials: [
     {
@@ -21,6 +21,7 @@ const headerData = {
     { name: "KURUMSAL" },
     { name: "YORUMLAR" },
   ],
+  logo: Logo,
 };
 
 function homePageRender() {

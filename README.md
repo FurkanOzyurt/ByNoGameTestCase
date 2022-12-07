@@ -1,1 +1,1 @@
-webpack -o bundle.js -w
+webpack -o dist -w
