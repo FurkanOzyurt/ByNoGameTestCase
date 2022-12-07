@@ -40,10 +40,10 @@
     </div>
   </div>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center py-3">
+    <div class="d-flex justify-content-between align-items-center py-3 gap-5">
       <div class="logo">
         <a href="/tr"><img src="{{logo}}" alt="logo" /></a>
-        <button class="btn ms-3 shadow-sm dark-mode">
+        <button class="btn ms-3 rounded-circle shadow-sm dark-mode">
           <i class="fas fa-cloud-moon"></i>
         </button>
         <button class="btn ms-2">
@@ -52,15 +52,82 @@
           </span>
         </button>
       </div>
-      <div>
+      <div style="flex: 1">
         <div class="search-container">
-          <div class="search-input">
-            <i class="search-icon fas fa-search"></i>
-            <input type="text" class="form-control-lg" placeholder="Ara..." />
+          <i class="search-icon fas fa-search"></i>
+          <input type="text" class="form-control-lg" placeholder="Ara..." />
+          <button class="btn rounded-0">Ara</button>
+        </div>
+      </div>
+      <div class="d-flex align-items-center main-header-buttons">
+        <div class="position-relative">
+          <button
+            class="btn btn-lg rounded-circle border"
+            id="user"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-user"></i>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="user"
+          >
+            Dropdown
           </div>
-          <button class="btn">Ara</button>
+        </div>
+        <div class="position-relative">
+          <button
+            class="btn btn-lg rounded-circle border"
+            id="notification"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="notification"
+          >
+            Dropdown
+          </div>
+        </div>
+        <div class="position-relative">
+          <button
+            class="btn btn-lg rounded-circle border"
+            id="heart"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-heart"></i>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="heart"
+          >
+            Dropdown
+          </div>
+        </div>
+        <div class="position-relative">
+          <button
+            class="btn btn-lg rounded-circle border"
+            id="shopping-basket"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="shopping-basket"
+          >
+            Dropdown
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="header-navigation">
+    <div class="container"></div>
   </div>
 </header>
