@@ -22,6 +22,17 @@ const headerData = {
     { name: "YORUMLAR" },
   ],
   logo: Logo,
+  navigation: [
+    { name: "OYUNLAR", href: "/" },
+    { name: "KNIGHT ONLINE", href: "/", children: [{ name: "Gold Bar" }] },
+    { name: "SKIN", href: "/" },
+    { name: "VALORANT VP", href: "/" },
+    { name: "RAZER AL-SAT", href: "/" },
+    { name: "STEAM", href: "/" },
+    { name: "PAZAR", href: "/" },
+    { name: "DESTEKLE", href: "/" },
+    { name: "ÖDEME", href: "/" },
+  ],
 };
 
 function homePageRender() {
