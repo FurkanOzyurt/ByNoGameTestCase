@@ -42,6 +42,8 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    flex: 1;
+
     .search-icon {
       position: absolute;
       top: 50%;
@@ -100,5 +102,41 @@ header {
   }
   .header-navigation {
     border-top: 1px solid #e4e4e4;
+    ul {
+      width: 100%;
+      li {
+        flex: 1;
+        border-left: 1px solid #e4e4e4;
+        &:last-child {
+          border-right: 1px solid #e4e4e4;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          padding: 0 25px;
+          white-space: nowrap;
+          color: #484848;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .header-navigation {
+      display: none;
+    }
+    .search-container {
+      order: 99;
+    }
+    .main-header-buttons div {
+      display: none;
+      &:first-child {
+        display: block;
+      }
+    }
   }
 }

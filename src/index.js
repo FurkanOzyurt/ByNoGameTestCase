@@ -42,6 +42,7 @@ function homePageRender() {
       var rendered = Mustache.render(template, headerData);
       document.getElementById("header").innerHTML = rendered;
     });
+
   fetch("/src/layouts/footer.html")
     .then((response) => response.text())
     .then((template) => {

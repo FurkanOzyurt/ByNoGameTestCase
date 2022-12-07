@@ -40,7 +40,9 @@
     </div>
   </div>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center py-3 gap-5">
+    <div
+      class="d-flex justify-content-between align-items-center flex-wrap py-3 gap-lg-5 gap-3"
+    >
       <div class="logo">
         <a href="/tr"><img src="{{logo}}" alt="logo" /></a>
         <button class="btn ms-3 rounded-circle shadow-sm dark-mode">
@@ -52,12 +54,10 @@
           </span>
         </button>
       </div>
-      <div style="flex: 1">
-        <div class="search-container">
-          <i class="search-icon fas fa-search"></i>
-          <input type="text" class="form-control-lg" placeholder="Ara..." />
-          <button class="btn rounded-0">Ara</button>
-        </div>
+      <div class="search-container">
+        <i class="search-icon fas fa-search"></i>
+        <input type="text" class="form-control-lg" placeholder="Ara..." />
+        <button class="btn rounded-0">Ara</button>
       </div>
       <div class="d-flex align-items-center main-header-buttons">
         <div class="position-relative">
@@ -129,10 +129,12 @@
   </div>
   <div class="header-navigation">
     <div class="container d-flex">
-      <ul>
-        <li>
-          <a href="#">Oyunlar</a>
+      <ul class="d-flex">
+        {{#navigation}}
+        <li class="flex-grow-1">
+          <a href="{{href}}">{{name}}</a>
         </li>
+        {{/navigation}}
       </ul>
     </div>
   </div>
